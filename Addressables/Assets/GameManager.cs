@@ -21,12 +21,16 @@ public class GameManager : MonoBehaviour
 
     public void Load()
     {
-        StartCoroutine(LoadCoroutine(address));
+        if(loadHandle.IsValid())
+            Instantiate(loadHandle.Result);
+        else
+            StartCoroutine(LoadCoroutine(address));
     }
 
-    public void UnLoad()
+    public void Unload()
     {
         //prefab引用的资源会被一并加载，所以用完的时候记得释放一下
-        Addressables.Release(loadHandle);
+        if(loadHandle.IsValid())
+            Addressables.Release(loadHandle);
     }
 }

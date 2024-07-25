@@ -18,11 +18,6 @@ MonoBehaviour:
   m_GUID: 4b3290681356e7a4284bc9729a88fe03
   m_SerializeEntries:
   - m_GUID: dfd3f8cbb59500946b5f981986c2a23d
-    m_Address: Assets/UnityChan/SD_unitychan/Prefabs/ToonShader_SD_unitychan_humanoid_Illust.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: ffbc51605a36fe74e93dea7d0ffa7ea7
     m_Address: myname
     m_ReadOnly: 0
     m_SerializedLabels: []
